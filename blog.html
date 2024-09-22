@@ -23,16 +23,17 @@
 </head>
 
 <body class="font-lexend">
-    <header class="bg-[#F9F7F3]">
-        <div class="navbar w-11/12 mx-auto">
-            <div class="navbar-start">
-                <button onclick="window.location.href='index.html'" class="btn bg-[#B4F461] font-semibold text-xl">Home</button>
+    <header class="bg-[#F9F7F3] py-6 sticky top-0 z-50">
+        <div class="lg:flex lg:items-center lg:justify-between w-11/12 mx-auto">
+            <div>
+                <button onclick="window.location.href='index.html'"
+                    class="btn bg-[#B4F461] font-semibold text-xl">Home</button>
             </div>
-            <div class="navbar-center flex items-center gap-2">
+            <div class="mt-3 flex items-center gap-2">
                 <img class="w-auto" src="./assets/logo.png" alt="">
                 <h1 class="font-semibold text-xl">Donate Bangladesh</h1>
             </div>
-            <div class="navbar-end">
+            <div class="mt-3">
                 <div class="flex items-center gap-2 font-medium text-xl text-gray-500">
                     <img src="./assets/coin.png" alt="">
                     <h3>5500</h3> <span>BDT</span>
@@ -40,8 +41,32 @@
             </div>
         </div>
     </header>
-    <main>
-
+    <main class="w-11/12 mx-auto mt-8">
+        <h1 class="mb-4 font-bold text-2xl">Important FAQ</h1>
+        <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+                <p>=> The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of an HTML or XML document as a tree of objects, allowing developers to interact with the content, structure, and style of a webpage through programming languages like JavaScript.</p>
+            </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+                <p>=> We can select an element from the DOM using methods like document.getElementById() for selecting by ID or document.querySelector() for selecting by CSS selectors. To select multiple elements, we can use document.querySelectorAll(). These methods allow us to access and manipulate specific elements on a webpage.</p>
+            </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-content">
+                <p>=> Event delegation is a DOM technique where you attach a single event listener to a parent element instead of individual child elements. The event "bubbles up" from the child element to the parent, allowing the parent to handle events for all its children. This method improves efficiency by reducing the number of event listeners, which is especially helpful when dealing with many or dynamically added child elements. It simplifies code management by centralizing event handling in one place. Overall, event delegation is useful for better performance and handling dynamic content changes in web applications.</p>
+            </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+                <p>=> We can manipulate an element's attributes in the DOM using setAttribute() to change values and getAttribute() to retrieve them. To modify styles, we can use the style property for direct changes or classList to add, remove, or toggle CSS classes. This allows for dynamic updates to an element's appearance and behavior on a webpage.</p>
+            </div>
+        </div>
     </main>
 </body>
 
