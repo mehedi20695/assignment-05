@@ -64,12 +64,14 @@ function validateDonationInput(donateInput) {
 
 // Function to handle donation button click
 function handleDonation(buttonId, inputId, donatedAmountId, modalId, location) {
+    
     const button = document.getElementById(buttonId);
     const input = document.getElementById(inputId);
     const donatedAmountElement = document.getElementById(donatedAmountId);
     const modal = document.getElementById(modalId);
+
     button.addEventListener("click", function () {
-        // event.preventDefault();
+
         const donateInput = parseFloat(input.value);
 
         // Validate the donation input
