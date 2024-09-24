@@ -79,7 +79,7 @@ function handleDonation(buttonId, inputId, donatedAmountId, modalId, location) {
             return;
         }
         else {
-            modal.classList.remove('hidden');
+            modal.showModal();
         }
 
         // Update the donation amount and balance
